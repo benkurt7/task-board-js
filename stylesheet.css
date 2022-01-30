@@ -1,0 +1,106 @@
+body {
+   background-image: url('/media/tile.jpg'); /* using image as body wallpaper */
+}
+html {
+  overflow: auto; /* so that you can scroll your browser left and right */
+
+}
+.containa {
+  padding: 30px;
+  display: block;
+  text-align: center;
+}
+
+.header {
+  padding: 30px; 
+  
+}
+
+.input_div {
+  background-image: url('/media/formbg.jpg');
+  padding: 14px;
+  width: 800px;
+  margin: auto;
+}
+
+.noteClass {  /* apply css to generate notes */
+    background-image: url('/media/notebg.png');
+    background-repeat: no-repeat;
+    height: 250px;
+    width: 200px;
+    float: left;
+    display: block;
+    align-items: right;
+    position: relative;
+
+}
+
+.noteClass:hover .close {
+  display: block;
+}
+
+.close { /* this is css for X over note SPAN */
+  position:absolute;
+  top: 10px;
+  left:10px;
+  padding: 12px 16px 12px 16px;
+  display: none;
+  cursor: pointer;
+}
+
+.taskClass { /* for user's task input */
+  font-family: 'Rubik';
+  padding-top: 25px;
+  width: 170px;
+  height: 140px;
+  overflow: auto;
+  margin-top: 40px;
+  margin-left: 5px;
+  text-align: center;
+}
+
+/* from this point it is mostly arranging the page layout */
+
+
+.dateClass {
+  margin: 3px;
+  text-align: left;
+  margin-left: 10px;
+}
+.timeClass {
+  text-align: left;
+margin-left: 10px;
+  
+}
+
+.add_btn_class {
+  float: left;
+  margin-top: -10px;
+}
+#save_button {
+  float: right;
+  padding: 7px;
+}
+#clear_button {
+  padding: 7px;
+  width: 500px;
+} 
+
+.inputs {
+  padding: 0;
+
+}
+label {
+  font-family: 'Chango';
+}
+#task_input {
+  width: 25%;
+  max-width: 650px;
+  margin: auto;
+  padding: 9px;
+}
+
+#notesDiv {
+  display: block ; 
+  margin-left: 70px;
+}

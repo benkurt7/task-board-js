@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>To-Do List</title>
+    <!-- external links for glyph X icon -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <!-- external link for fade-in effect and buttons: -->
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <!-- external links for fonts : -->
+    <link href='https://fonts.googleapis.com/css?family=Rubik' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Chango' rel='stylesheet'>
+    <!-- internal files: -->
+    <link href="stylesheet.css" rel="stylesheet">
+    <script src="script.js">
+
+    </script>
+</head>
+
+<body onload="onloadFunction()">
+    <div id="containerDiv" class="containa">
+
+        <div id="headerDiv" class="header">
+            <img src="/media/title.png" alt="to-do list">
+        </div>
+
+        <div id="inputDiv" class="input_div">
+
+
+            <div>
+                <label for="task_input">Write a task (<span style="color: rgb(236, 100, 96);">*required field</span>):</label>
+                <input type="text" id="task_input" class="inputs w3-input w3-border w3-animate-input"
+                    placeholder="Write a task">
+            </div>
+            <div>
+                <label for="target_date_input">Appoint date (<span style="color: rgb(236, 100, 96)">*required field</span>):</label>
+                <input type="date" id="target_date_input" class="inputs">
+            </div>
+            <div>
+                <label for="target_time_input">Select time (optional):</label>
+                <input type="time" id="target_time_input" class="inputs">
+            </div>
+            <button id="save_button" class="w3-button w3-teal" onclick="saveNotes()">Save Tasks</button>
+            <button id="clear_button" class="w3-button w3-teal" onclick="clear_fields()">Clear Form</button>
+            <button onclick="add_2_board()" class="w3-button w3-xlarge w3-circle w3-teal add_btn_class">+</button>
+
+
+        </div>
+        <!-- this is an empty div to fill with new notes -->
+        <div id="notesDiv"></div>
+    </div>
+
+    </div>
+</body>
+
+</html>
